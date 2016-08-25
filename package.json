@@ -1,0 +1,30 @@
+{
+  "name": "andcloud-service",
+  "version": "0.0.0",
+  "description": "service side of andcloud project",
+  "main": "index.js",
+  "scripts": {
+    "compile:clean": "rimraf lib",
+    "compile:build": "babel src -d lib",
+    "compile": "npm run compile:clean && npm run compile:build",
+    "start": "npm run compile && node /lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "android",
+    "service",
+    "VM"
+  ],
+  "author": "zoolsher",
+  "license": "MIT",
+  "dependencies": {
+    "adbkit": "^2.5.1",
+    "babel-preset-es2015": "^6.13.2",
+    "bluebird": "^3.4.1",
+    "rimraf": "^2.5.4",
+    "zmq": "^2.15.3"
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.4"
+  }
+}
