@@ -1,0 +1,14 @@
+{"level":"error","message":"start action get called","timestamp":"2016-08-25T08:41:19.253Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-26T03:49:03.073Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-26T03:49:30.606Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-26T03:55:49.257Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-26T03:57:04.553Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T03:27:08.834Z"}
+
+Entry {
+  date: Mon Aug 29 2016 11:27:10 GMT+0800 (CST),
+  pid: 1063,
+  tid: 1185,
+  priority: 3,
+  tag: 'dalvikvm',
+  message: 'WAIT_FOR_CONCURRENT_GC blocked 22ms' }
