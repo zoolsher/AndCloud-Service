@@ -13,7 +13,7 @@ class Dispatch {
             r.action()
             return r;
         }catch(e){
-            logger.error("cannot require the file as Router there were several reasons for that.");            
+            logger.error("cannot require the file as Router there were several reasons for %s",e.message);            
         }
     }
 }

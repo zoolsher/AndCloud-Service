@@ -1,14 +1,28 @@
-{"level":"error","message":"start action get called","timestamp":"2016-08-25T08:41:19.253Z"}
-{"level":"info","message":"start log cat","timestamp":"2016-08-26T03:49:03.073Z"}
-{"level":"info","message":"start log cat","timestamp":"2016-08-26T03:49:30.606Z"}
-{"level":"info","message":"start log cat","timestamp":"2016-08-26T03:55:49.257Z"}
-{"level":"info","message":"start log cat","timestamp":"2016-08-26T03:57:04.553Z"}
-{"level":"info","message":"start log cat","timestamp":"2016-08-29T03:27:08.834Z"}
-
-Entry {
-  date: Mon Aug 29 2016 11:27:10 GMT+0800 (CST),
-  pid: 1063,
-  tid: 1185,
-  priority: 3,
-  tag: 'dalvikvm',
-  message: 'WAIT_FOR_CONCURRENT_GC blocked 22ms' }
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:04:12.352Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:04:12.361Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:05:31.265Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:05:31.274Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:05:58.588Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:05:58.597Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:06:09.584Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:06:09.593Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:08:46.735Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:08:46.747Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:13:00.680Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:13:00.689Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:18:49.451Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:18:49.460Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:19:22.765Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:19:22.778Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:19:39.181Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:19:39.192Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:37:49.416Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:37:49.425Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:47:53.919Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:47:53.932Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:48:09.592Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:48:09.600Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:51:49.636Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:51:49.646Z"}
+{"level":"info","message":"start log cat","timestamp":"2016-08-29T09:53:12.801Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:53:12.811Z"}
