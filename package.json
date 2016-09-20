@@ -7,7 +7,7 @@
     "compile:clean": "rimraf lib",
     "compile:build": "babel src -d lib",
     "compile": "npm run compile:clean && npm run compile:build",
-    "start": "npm run compile && node /lib/index.js",
+    "start": "npm run compile && node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
