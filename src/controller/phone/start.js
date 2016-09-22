@@ -1,8 +1,8 @@
-import Router from './../Router';
+import Controller from './../../until/Controller';
 let client = require("adbkit").createClient();
 import mongoose from 'mongoose';
 import {Log} from './../../model/index';
-class Start extends Router {
+class StartController extends Controller {
     constructor() {
         super();
     }
@@ -48,4 +48,4 @@ class Start extends Router {
 
 }
 
-export default Start;
+export default StartController;

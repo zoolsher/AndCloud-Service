@@ -26,3 +26,4 @@
 {"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:51:49.646Z"}
 {"level":"info","message":"start log cat","timestamp":"2016-08-29T09:53:12.801Z"}
 {"level":"info","message":"connect mongodb success","timestamp":"2016-08-29T09:53:12.811Z"}
+{"level":"error","message":"cannot require the file as Router there were several reasons for Cannot find module '/Users/zoolsher/Desktop/AndCloud-Service/lib/router/phone/start'","timestamp":"2016-09-22T15:11:27.186Z"}
