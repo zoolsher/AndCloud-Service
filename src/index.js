@@ -14,7 +14,7 @@ var router = {
     },
 };
 import path from 'path';
-import Dispatcher from "./router/dispatch";
+import Dispatcher from "./controller/dispatch";
 new Dispatcher(path.join(__dirname,"router")).dispatch(router);
 
 sock.on("message",function(data){

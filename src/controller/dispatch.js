@@ -8,8 +8,8 @@ class Dispatch {
     dispatch(router) {
         let file = path.join(this.startDir,router.route);
         try{
-            let Router = require(file).default;
-            let r = new Router(router);
+            let Controller = require(file).default;
+            let r = new Controller(router);
             r.action()
             return r;
         }catch(e){
