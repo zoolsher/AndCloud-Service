@@ -1,7 +1,8 @@
-let emmit = require("emmit");
+import EventEmitter from 'events';
 
-class LifeCycle{
+class LifeCycle extends EventEmitter{
     constructor(){
+        super();
         this.regiseters = [];
     }
     register(phone){
@@ -15,3 +16,5 @@ class LifeCycle{
         })
     }
 }
+
+export default LifeCycle;
