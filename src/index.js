@@ -5,8 +5,6 @@ sock.connect(listenPort);
 
 import {module as Util} from './until';
 
-let Channel = Until.Channel;
-let mainChannel = new Channel();
 
 
 
