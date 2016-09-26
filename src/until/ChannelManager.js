@@ -1,5 +1,9 @@
 import Channel from './Channel';
 import Logger from './Logger';
+import uuid from 'uuid';
+
+var _singleton = null;
+
 //Single Instance
 /**
  * (ChannelMannger)
@@ -7,6 +11,12 @@ import Logger from './Logger';
  * @class ChannelManager
  */
 class ChannelManager {
+    static getInstance(){
+        if(_singleton == null){
+            _singleton = new ChannelManager();
+        }
+        return _singleton;
+    }
     /**
      * Creates an instance of ChannelManager.
      * 
@@ -23,7 +33,7 @@ class ChannelManager {
      */
     create(name) {
         //TODO:Check if the id is useful;
-        var id = name;
+        var id = uuid.v4();
         var channel = new Channel(name, id, false);
         this._channels.push(channel);
         return channel;
