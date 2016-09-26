@@ -1,18 +1,13 @@
+import ConfigData from './../config';
+
 import ZMQ from 'zmq';
-let listenPort = "tcp://127.0.0.1:3000";
+let listenPort = ConfigData["MessageQueen"]["connection"];
 let sock = ZMQ.socket("pull");
 sock.connect(listenPort);
 
 import {module as Util} from './until';
 
-import {WHATEVER} from './actionnames';
-
-var router = {
-    type:WHATEVER,
-    params:{
-        "id":12
-    },
-};
+import {WHATEVER,CREATED_A_NEW_PROJECT} from './actionnames';
 
 let ChannelManager = Util.ChannelManager.default;
 
@@ -20,11 +15,15 @@ var channelManager = ChannelManager.getInstance();
 
 var mainChannel = channelManager.get("main");
 
-mainChannel.pulling(WHATEVER,function(){
+mainChannel.pulling(WHATEVER, function () {
     console.log(arguments);//{ '0': { id: 12 } }
 })
 
-mainChannel.push(router);
+mainChannel.pulling(CREATED_A_NEW_PROJECT,function(arg){
+    console.log(arg);
+})
+
+
 
 console.log(mainChannel);
 /**
@@ -43,10 +42,16 @@ console.log(mainChannel);
 // import Dispatcher from "./controller/dispatch";
 // new Dispatcher(path.join(__dirname,"controller")).dispatch(router);
 
-mainChannel.emit(router);
 
-sock.on("message",function(data){
+sock.on("message", function (data) {
     console.log(data.toString());
+    var action = {};
+    try {
+        action = JSON.parse(data);
+        mainChannel.push(action);
+    } catch (e) {
+        Util.Logger.warn("data cannot parsed to JSOBJECt %s, err is %j", data, e);
+    }
 });
 
 

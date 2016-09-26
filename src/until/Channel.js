@@ -24,7 +24,7 @@ class Channel extends EventEmitter {
         var type = action.type || "";
         var params = action.params || {};
         if (type == "") {
-            Logger.warn("Channel just pushed an action with no type, the args are $j", arguments);
+            Logger.warn("Channel just pushed an action with no type, the args are %j", arguments);
         } else {
             this.emit(type, params);
         }
