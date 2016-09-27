@@ -1,50 +1,28 @@
 import ConfigData from './../config';
-
+global.app = {}
+global.app.configData = ConfigData;
+/**
+ * connecting messageQueen from frontEnd;
+ */
 import ZMQ from 'zmq';
 let listenPort = ConfigData["MessageQueen"]["connection"];
 let sock = ZMQ.socket("pull");
 sock.connect(listenPort);
 
-import {module as Util} from './until';
-
-import {WHATEVER,CREATED_A_NEW_PROJECT} from './actionnames';
-
-let ChannelManager = Util.ChannelManager.default;
-
-var channelManager = ChannelManager.getInstance();
-
-var mainChannel = channelManager.get("main");
-
-mainChannel.pulling(WHATEVER, function () {
-    console.log(arguments);//{ '0': { id: 12 } }
-})
-
-mainChannel.pulling(CREATED_A_NEW_PROJECT,function(arg){
-    console.log(arg);
-})
-
-
-
-console.log(mainChannel);
 /**
- * Channel {
-  domain: null,
-  _events: { whatever: [Function] },
-  _eventsCount: 1,
-  _maxListeners: undefined,
-  name: 'main',
-  id: '7557f6b0-8337-41ae-bf51-c67b0176287d',
-
+ * setting the channelManager to gloabl.app
  */
+import {module as Util} from './until';
+import {WHATEVER,CREATED_A_NEW_PROJECT} from './actionnames';
+let ChannelManager = Util.ChannelManager.default;
+var channelManager = ChannelManager.getInstance()
+var mainChannel = channelManager.get("main");
+global.app.ChannelManager = ChannelManager;
 
-
-// import path from 'path';
-// import Dispatcher from "./controller/dispatch";
-// new Dispatcher(path.join(__dirname,"controller")).dispatch(router);
-
-
+/**
+ * register the message event on the messageQueen
+ */
 sock.on("message", function (data) {
-    console.log(data.toString());
     var action = {};
     try {
         action = JSON.parse(data);
@@ -54,5 +32,7 @@ sock.on("message", function (data) {
     }
 });
 
+global.app.controllers = [];
+global.app.controllers.push(require("./controller/MainController"));
 
 

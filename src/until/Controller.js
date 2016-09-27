@@ -1,12 +1,8 @@
 var logger = require("./../until/Logger");
 
 class Controller{
-    constructor(router){
-        this.router = router;
+    constructor(){
         this.logger = logger;
-    }
-    action(){
-        logger.info("Router Action Function Get Called");
     }
 }
 
