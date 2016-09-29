@@ -14,3 +14,7 @@
 {"level":"info","message":"connect mongodb success","timestamp":"2016-09-29T02:24:29.628Z"}
 {"level":"info","message":"connect mongodb success","timestamp":"2016-09-29T02:27:12.592Z"}
 {"level":"info","message":"connect mongodb success","timestamp":"2016-09-29T02:34:48.992Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-29T02:48:22.369Z"}
+{"level":"info","message":"service loaded MainController","timestamp":"2016-09-29T05:23:28.755Z"}
+{"level":"info","message":"service is running","timestamp":"2016-09-29T05:23:28.756Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-29T05:23:28.762Z"}
