@@ -1,6 +1,5 @@
 import ConfigData from './../config';
-global.app = {}
-global.app.configData = ConfigData;
+
 /**
  * connecting messageQueen from frontEnd;
  */
@@ -18,7 +17,7 @@ let ChannelManager = Util.ChannelManager.default;
 var channelManager = ChannelManager.getInstance()
 var mainChannel = channelManager.get("main");
 global.app.ChannelManager = ChannelManager;
-
+global.app.Logger = Util.Logger;
 /**
  * register the message event on the messageQueen
  */
@@ -34,5 +33,3 @@ sock.on("message", function (data) {
 
 global.app.controllers = [];
 global.app.controllers.push(require("./controller/MainController"));
-
-

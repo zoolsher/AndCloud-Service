@@ -2,3 +2,15 @@
 {"level":"warn","message":"data cannot parsed to JSOBJECt {\"type\":\"created a new project\",\"params\":{\"id\":\"57e9dda9964c948dd17ac0e7\"}}, err is {}","timestamp":"2016-09-27T02:47:05.176Z"}
 {"level":"warn","message":"data cannot parsed to JSOBJECt {\"type\":\"created a new project\",\"params\":{\"id\":\"57e9de6b964c948dd17ac0e8\"}}, err is {}","timestamp":"2016-09-27T02:50:19.208Z"}
 {"level":"warn","message":"data cannot parsed to JSOBJECt {\"type\":\"created a new project\",\"params\":{\"id\":\"57e9dee6964c948dd17ac0e9\"}}, err is {}","timestamp":"2016-09-27T02:52:22.909Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-28T16:09:00.198Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-28T16:15:34.845Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-28T16:16:30.786Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-28T16:16:47.415Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-28T16:17:04.082Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-28T16:17:24.698Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-28T16:17:41.147Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-29T02:19:51.240Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-29T02:22:43.935Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-29T02:24:29.628Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-29T02:27:12.592Z"}
+{"level":"info","message":"connect mongodb success","timestamp":"2016-09-29T02:34:48.992Z"}
