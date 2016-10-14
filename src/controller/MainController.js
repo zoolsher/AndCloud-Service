@@ -1,6 +1,6 @@
-import {CREATED_A_NEW_PROJECT, CHANNEL_SHUT_DOWN} from './../actionnames';
+import { CREATED_A_NEW_PROJECT, CHANNEL_SHUT_DOWN } from './../actionnames';
 import Controller from './../until/Controller';
-import {Project} from './../model';
+import { Project } from './../model';
 import aapt from 'aapt';
 
 class MainController extends Controller {
@@ -35,9 +35,13 @@ class MainController extends Controller {
                                 }
                             })
                         }).error((err) => {
-                            global.app.Logger.error("errer happens with the mainController, err is %j", err);
+                            global.app.Logger.error("errer happens in the mainController with the aapt when analizing %s and id is %s, err is %j", apkfilepath, id, err);
                         });
                 }
+                return null;
+            })
+            .error((err) => {
+                global.app.Logger.error("error happens in the mainController with Mongoose id is %s", id);
             })
 
     }
