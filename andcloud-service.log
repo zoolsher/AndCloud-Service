@@ -21,3 +21,6 @@
 {"level":"info","message":"service loaded MainController","timestamp":"2016-10-02T15:47:35.012Z"}
 {"level":"info","message":"service is running","timestamp":"2016-10-02T15:47:35.013Z"}
 {"level":"error","message":"connection error","timestamp":"2016-10-02T15:47:35.017Z"}
+{"level":"info","message":"service loaded MainController","timestamp":"2016-11-28T09:50:25.227Z"}
+{"level":"info","message":"service is running","timestamp":"2016-11-28T09:50:25.229Z"}
+{"level":"error","message":"connection error","timestamp":"2016-11-28T09:50:25.238Z"}
